@@ -1,0 +1,565 @@
+/* Common */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: .3s;
+}
+
+a:hover {
+  opacity: .8;
+}
+
+body {
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+i {
+  padding-right: 4px;
+  font-size: 32px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  margin-top: 4px;
+}
+
+.en {
+  font-family: 'Rubik', sans-serif;
+}
+
+  /* header */
+  header {
+    font-size: 14px;
+    width: 100%;
+    position: fixed;
+    z-index: 15;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header ul li a {
+    align-items: center;
+  }
+  
+  header i {
+    font-size: 32px;
+  }
+  
+  /* Carousel */
+  .carousel {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel ul {
+    display: flex;
+    padding: 0;
+    transition: .3s;
+  }
+  
+  .carousel li {
+    opacity: 1;
+    min-width: 100%;
+    width: 100%;
+  }
+  
+  .carousel img {
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    position: relative;
+  }
+  
+  .note {
+    height: 60px;
+  }
+  
+  .note a {
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+  }
+  
+  #prev,
+  #next {
+    position: absolute;
+    font-size: 40px;
+    color: #0068b7;
+    transition: .3s;
+  }
+  
+  #prev:hover,
+  #next:hover {
+    color: #1d2088;
+  }
+  
+  #prev {
+    left: 0;
+  }
+  
+  #next {
+    right: 0;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .carousel nav {
+    text-align: center;
+    margin-top: 8px;
+  }
+  
+  .carousel nav button {
+    background-color: #0068b7;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 8px;
+    transition: .3s;
+  }
+  
+  .carousel nav button:last-child {
+    margin-right: 0;
+  }
+  
+  .carousel nav button.current {
+    background-color: #1d2088;
+  }
+  
+  /* Announce */
+  .announce {
+    margin-top: 40px;
+    transition: .3s;
+  }
+  
+  .announce:hover {
+    opacity: .8;
+  }
+  
+  .announce a {
+    color: rgb(27, 25, 25);
+    border: 1px solid #e60000;
+    border-radius: 4px;
+    padding: 16px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .announce i {
+    margin-right: 8px;
+    font-size: 24px;
+  }
+
+  .info i {
+    font-size: 16px;
+  }
+  
+  /* News */
+  .card {
+    border: none;
+  }
+  
+  .cards li:hover {
+    opacity: .8;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cards i {
+    font-size: 11px;
+  }
+  
+  .cards img {
+    object-fit: cover;
+    width: 100%;
+    height: 100px;
+    border-radius: 4px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cards li {
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    padding: 0;
+    transition: .3s;
+  }
+  
+  .cards h2 {
+    color: rgb(27, 25, 25);
+  }
+  
+  .description .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 130px;
+  }
+  
+    .description footer p {
+      font-size: 11px;
+    }
+  
+  .description footer {
+    align-items: center;
+    color: rgb(27, 25, 25);
+  }
+
+  .timetable p {
+    text-align: center;
+  }
+  
+  .openhour .info {
+    padding: 8px 24px;
+    border-radius: 4px;
+    background-color: #1d2088;
+    color: #fff;
+  }
+  
+  .open {
+    font-weight: bold;
+    font-size: 32px;
+  }
+  
+  .tips {
+    font-size: 16px;
+  }
+  
+  .detail button {
+    display: block;
+    border-radius: 4px;
+    border: 1px solid #1d2088;
+    padding: 8px 24px;
+    width: 400px;
+    box-shadow: 4px 3px 0px #ddd;
+    margin: 0 auto;
+  }
+  
+  .detail {
+    margin: 0 auto;
+  }
+  
+  .detail button:first-child {
+    margin-bottom: 24px;
+  }
+  
+  .detail button a {
+    color: rgb(27, 25, 25);
+  }
+  
+  /* footer */
+  footer p {
+    font-size: 14px;
+  }
+  
+  .sns {
+    border-top: 2px solid #ddd;
+    text-align: center;
+  }
+  
+  .sns i {
+    font-size: 32px;
+    color: #1d2088;
+    margin-top: 16px;
+    display: inline-block;
+  }
+  
+  .company a {
+    padding: 4px;
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .company {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .links {
+    margin-bottom: 32px;
+  }
+
+  .links a {
+    font-size: 16px;
+  }
+
+  .address {
+    text-align: center;
+    border-top: 2px solid #ddd;
+    padding-top: 16px;
+  }
+  
+  .links a {
+    color: rgb(27, 25, 25);
+  }
+  
+  /* Events */
+  .events .cards {
+    display: flex;
+    transition: .3s;
+  }
+  
+  .events .container{
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .events li {
+    min-width: calc((100% - 48px) / 3);
+  }
+  
+  #prev-2,
+  #next-2 {
+    position: absolute;
+    top: 40%;
+    transform: translateY(50%);
+    font-size: 40px;
+    color: rgb(250, 232, 65);
+    transition: .5s;
+  }
+  
+  #prev-2:hover,
+  #next-2:hover {
+    color: #1d2088;
+  }
+  
+  #prev-2 {
+    left: 0;
+  }
+  
+  #next-2 {
+    right: 0;
+  }
+  
+  .more {
+    text-align: center;
+  }
+
+  .more i {
+    font-size: 16px;
+  }
+  
+  .pc {
+    display: none;
+  }
+  
+  .sp {
+    display: block;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  a {
+    font-size: 16px;
+  }
+  
+  section + section {
+    margin-top: 80px;
+  }
+  
+  .items {
+    text-align: center;
+    /* font-family: 'Kosugi Maru', sans-serif; */
+    /* font-weight: bold; */
+  }
+  
+  .note {
+    height: 60px;
+  }
+  
+  .note a {
+    line-height: 60px;
+  }
+  
+  #prev,
+  #next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 32px;
+  color: #0068b7;
+  transition: .5s;
+  }
+  
+  .carousel img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    position: relative;
+  }
+  
+  header.sp {
+    height: 60px;
+    background-color: rgb(250, 232, 65);
+  }
+  
+  header.sp nav {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+  
+  .logo {
+    line-height: 60px;
+  }
+  
+  .bar {
+    color: #fff;
+    font-size: 28px;
+    transition: .3s;
+  }
+  
+  #open {
+    position: relative;
+    opacity: 0;
+  }
+  
+  #close {
+    position: absolute;
+    right: 8px;
+    opacity: 0;
+  }
+  
+  #open.active,
+  #close.active {
+    opacity: 1;
+  }
+  
+  .menu {
+    background-color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: .3s;
+    transform: translateY(-20px);
+    pointer-events: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu.active {
+    transform: none;
+    pointer-events: all;
+    opacity: 1;
+  }
+  
+  .menu ul {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .menu ul li {
+    padding: 8px;
+    text-align: left;
+    margin: 0 auto;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .menu li.current {
+    border-bottom: 2px solid #0068b7;
+  }
+  
+  .menu a {
+    font-size: 14px;
+  }
+    
+    .announce a {
+      width: auto;
+    }
+  
+    .openhour .time {
+      display: block;
+    }
+  
+    .timetable,
+    .detail {
+      width: 100%;
+    }
+  
+    .tips {
+      margin-bottom: 32px;
+      font-size: 14px;
+    }
+  
+    .detail button {
+      width: 100%;
+    }
+  
+    .description footer p {
+      font-size: 11px;
+    }
+
+    .cards li {
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+  
+    .cards li:nth-child(2n) {
+      margin-right: 0;
+    }
+  
+    .cards h2 {
+      margin-top: 8px;
+      font-size: 14px;
+    }
+  
+    .events li {
+      min-width: calc((100% - 8px) / 2);
+    }
+  
+    .events li:nth-child(2n) {
+      margin-right: 8px;
+    }
+  
+    .cards img {
+      height: 100px;
+      border-radius: 4px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .links a {
+      font-size: 14px;
+    }
+
+    #to_top {
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      opacity: 0;
+      transition: .3s;
+    }
+    
+    #to_top.scrolled {
+      opacity: 1;
+    }
+    
+    #to_top i {
+      font-size: 32px;
+      color: #009944;
+    }
+
+    #to_top {
+      transition: .3s;
+    }
+
+    #to_top i:hover {
+      color: #1d2088;
+    }

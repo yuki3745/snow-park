@@ -1,0 +1,303 @@
+@media (min-width: 600px){
+  .timetable,
+  .detail {
+    width: 50%;
+  }
+  
+  .openhour .time {
+    display: flex;
+    align-items: center;
+  }
+
+
+  .detail button {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .company {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .links {
+    margin-bottom: 32px;
+  }
+
+  .address {
+    text-align: center;
+    border-top: 2px solid #ddd;
+    padding-top: 16px;
+  }
+
+
+  .cards img {
+    height: 150px;
+  }
+
+  .cards h2 {
+    font-size: 16px;
+  }
+
+  .description footer p {
+    font-size: 14px;
+  }
+
+
+}
+
+/* PC */
+@media (min-width: 850px) {
+i {
+  font-size: 40px;
+}
+  
+a {
+  font-size: 20px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.sp {
+  display: none;
+}
+
+.pc {
+  display: block;
+}
+
+section + section {
+  margin-top: 150px;
+}
+
+/* header */
+header {
+  height: 100px;
+  background-color: #fff;
+}
+
+.logo {
+  line-height: 100px;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  text-align: center;
+  padding: 20px;
+}
+
+header ul li a {
+  align-items: center;
+  font-size: 18px;
+}
+
+header i {
+  padding-bottom: 6px;
+}
+
+/* Carousel */
+.carousel ul {
+  display: flex;
+  padding: 0;
+  transition: .3s;
+}
+
+.carousel li {
+  opacity: 1;
+  min-width: 100%;
+  width: 100%;
+}
+
+.carousel img {
+  height: 800px;
+}
+
+.note {
+  height: 80px;
+}
+
+.note a {
+  line-height: 80px;
+}
+
+#prev,
+#next {
+  top: 50%;
+  transform: translateY(50%);
+}
+
+#prev:hover,
+#next:hover {
+  color: #1d2088;
+}
+
+/* Announce */
+.announce {
+  margin-top: 40px;
+  transition: .3s;
+}
+
+.announce:hover {
+  opacity: .8;
+}
+
+.announce a {
+  display: block;
+  width: 600px;
+}
+
+.announce i {
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+.info i {
+  font-size: 20px;
+}
+
+/* News */
+.cards {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cards img {
+  height: 250px;
+}
+
+.cards li {
+  margin-right: 24px;
+  margin-bottom: 16px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  padding: 0;
+  transition: .3s;
+}
+
+.cards h2 {
+  margin-top: 8px;
+  font-size: 24px;
+  color: rgb(27, 25, 25);
+}
+
+.description .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 180px;
+}
+
+.description footer {
+  align-items: center;
+  color: rgb(27, 25, 25);
+}
+
+.description footer p {
+  font-size: 16px;
+}
+
+.description footer i {
+  font-size: 16px;
+}
+
+.timetable p {
+  text-align: center;
+}
+
+.openhour .info {
+  padding: 8px 24px;
+  border-radius: 4px;
+  background-color: #1d2088;
+  color: #fff;
+}
+
+.openhour .info i {
+  padding-right: 4px;
+}
+
+.open {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.tips {
+  font-size: 16px;
+}
+
+.detail button {
+  display: block;
+  border-radius: 4px;
+  border: 1px solid #1d2088;
+  padding: 8px 24px;
+  width: 400px;
+  box-shadow: 4px 3px 0px #ddd;
+  margin: 0 auto;
+}
+
+.detail {
+  margin: 0 auto;
+}
+
+.detail button:first-child {
+  margin-bottom: 24px;
+}
+
+.detail button a {
+  color: rgb(27, 25, 25);
+}
+
+/* footer */
+footer p {
+  font-size: 16px;
+}
+
+.sns i {
+  font-size: 40px;
+  color: #1d2088;
+  margin-top: 16px;
+  display: inline-block;
+}
+
+.company {
+  display: flex;
+  flex-direction:row-reverse;
+  justify-content: space-around;
+}
+
+.address {
+  border: none;
+}
+
+
+
+.company p {
+  padding: 4px;
+  margin: 0;
+}
+
+.links a {
+  color: rgb(27, 25, 25);
+  font-size: 16px;
+}
+
+.events li {
+  min-width: calc((100% - 48px) / 3);
+}
+
+.events li:nth-child(2n) {
+  margin-right: 24px;
+}
+
+.items {
+  text-align: left;
+}
+
+#to_top i {
+  font-size: 40px;
+}
+
+}

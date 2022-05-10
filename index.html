@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/f3bdbfba30.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsible.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+JP&family=Rubik&display=swap" rel="stylesheet">
+  <title>Snow Park</title>
+</head>
+
+<body>
+  <header class="pc">
+    <div class="container">
+      <nav>
+        <a href="#" class="logo">logo</a>
+        <ul>
+          <li><a href="" style="color: #e60000;"><i class="fa-solid fa-map-location-dot"></i><br>マップ</a></li>
+          <li><a href="" style="color: #f39800;"><i class="fa-brands fa-fort-awesome"></i><br>アトラクション</a></li>
+          <li><a href="" style="color: #f0e620;"><i class="fa-solid fa-star"></i><br>イベント</a></li>
+          <li><a href="" style="color: #009944;"><i class="fa-solid fa-carrot"></i></i><br>収穫体験</a></li>
+          <li><a href="" style="color: #0068b7;"><i class="fa-solid fa-fan"></i><br>お花だより</a></li>
+          <li><a href="" style="color: #1d2088;"><i class="fa-solid fa-clock"></i><br>入園料</a></li>
+          <li><a href="" style="color: #920783;"><i class="fa-solid fa-car"></i><br>アクセス</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <header class="sp">
+    <nav>
+      <a href="#" class="logo">logo</a>
+      <button class="bar active" id="open"><i class="fa-solid fa-bars"></i></button>
+      <button class="bar" id="close"><i class="fa-solid fa-xmark"></i></button>
+    </nav>
+    
+    <section class="menu">
+      <div class="container">
+        <ul>
+          <li class="current"><a href="" style="color: #e60000;"><i class="fa-solid fa-map-location-dot"></i>園内マップ</a></li>
+          <li><a href="" style="color: #f39800;"><i class="fa-brands fa-fort-awesome"></i>アトラクション</a></li>
+          <li><a href="" style="color: rgb(250, 232, 65);"><i class="fa-solid fa-star"></i>イベント</a></li>
+          <li><a href="" style="color: #009944;"><i class="fa-solid fa-carrot"></i></i>収穫体験</a></li>
+          <li><a href="" style="color: #0068b7;"><i class="fa-solid fa-fan"></i>お花だより</a></li>
+          <li><a href="" style="color: #1d2088;"><i class="fa-solid fa-clock"></i>入園料</a></li>
+          <li><a href="" style="color: #920783;"><i class="fa-solid fa-car"></i>アクセス</a></li>
+        </ul>
+      </div>
+    </section>
+  </header>
+
+  <div id="target"></div>
+
+  <section class="carousel">
+    <ul>
+      <li>
+        <img src="img/snow_park.jpg" alt="スノーパーク">
+        <div class="note" style="background-color: #f05a5a;"><a href=""><span class="en">Snow Park</span>へようこそ！</a></div>
+      </li>
+      <li>
+        <img src="img/Nemophila.jpg" alt="ネモフィラ">
+        <div class="note" style="background-color: #0068b7;"><a href="">ネモフィラを堪能しませんか</a></div>
+      </li>
+      <li>
+        <img src="img/firework.jpg" alt="イベント">
+        <div class="note" style="background-color: rgb(250, 232, 65);"><a href="">総面積〇〇㎡の広大なイルミネーション</a></div>
+      </li>
+      <li>
+        <img src="img/sweet_potato.jpg" alt="収穫">
+        <div class="note" style="background-color: #009944;"><a href="">今月の収穫体験</a></div>
+      </li>
+    </ul>
+    
+    <button id="prev"class="hidden"><i class="fa-solid fa-circle-chevron-left"></i></button>
+    <button id="next"><i class="fa-solid fa-circle-chevron-right"></i></button>
+  
+    <nav>
+      <!-- <button class="current"></button>
+      <button></button>
+      <button></button>
+      <button></button> -->
+    </nav>
+  </section>
+
+  <section class="announce">
+    <div class="container">
+      <a href=""><i class="fa-solid fa-circle-exclamation" style="color: #e60000;"></i>ご来園前に必ずお読みください</a>
+    </div>
+  </section>
+
+  <section class="openhour">
+    <div class="container">
+      <h1 class="items">営業時間</h1>
+      <div class="time">
+        <div class="timetable">
+          <p class="info mt-5"><i class="bi bi-pin-angle-fill"></i><span class="en">Snow Park</span>は年中無休です</p>
+          
+          <p class="open">9：30 ～ 17：00</p>
+          <p>（最終入園 16：30）</p>
+          <p class="tips mt-3">※季節や天候により、営業時間の変更・臨時休園する場合がございます。</p>
+        </div>
+        <div class="detail">
+          <button><a href=""><span class="en">GW</span>中の営業時間についてはこちら</a></button>
+          <button><a href="">入園料についてはこちら</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="news">
+    <div class="container">
+      <h1 class="items">ニュース</h1>
+      <ul class="cards mt-5">
+        <li>
+          <a href="">
+            <div class="card">
+              <img src="img/open.jpg" alt="営業時間">
+            </div>
+            <div class="description">
+              <div class="container">
+                <h2><span class="en">GW</span>中の営業時間について</h2>
+                <footer>
+                  <p>
+                    2022/4/29 ～ 2022/5/5<br>
+                    <i class="fa-solid fa-circle-chevron-right"></i>詳しくはこちら
+                  </p>
+                </footer>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="card">
+              <img src="img/puppy.jpg" alt="わんちゃんランド「ふれあい」">
+            </div>
+            <div class="description">
+              <div class="container">
+                <h2>わんちゃんランド「ふれあい」の予約方法が変わります</h2>
+                <footer>
+                  <p>
+                    2022/4 ～<br>
+                    <i class="fa-solid fa-circle-chevron-right"></i>詳しくはこちら
+                  </p>
+                </footer>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="events">
+    <div class="container">
+      <h1 class="items">イベント</h1>
+      <ul class="cards mt-5">
+        <li>
+          <a href="">
+            <div class="card">
+              <img src="img/beetle.jpg" alt="昆虫">
+            </div>
+            <div class="description">
+              <div class="container">
+                <h2>世界の昆虫爬虫類王国</h2>
+                <footer>
+                  <p>
+                    5/6以降毎日10：00～16：00<br>
+                    <i class="fa-solid fa-circle-chevron-right"></i>詳しくはこちら
+                  </p>
+                </footer>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <div class="card">
+              <img src="img/aroma.jpg" alt="アロマ体験">
+            </div>
+            <div class="description">
+              <div class="container">
+                <h2>親子で香育！アロマ体験</h2>
+                <footer>
+                  <p>
+                    5月7～9日　10:00～16:00(最終受付)<br>
+                    <i class="fa-solid fa-circle-chevron-right"></i>詳しくはこちら
+                  </p>
+                </footer>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="card">
+              <img src="img/candle.jpg" alt="キャンドル作り体験">
+            </div>
+            <div class="description">
+              <div class="container">
+                <h2>キャンドル作り体験</h2>
+                <footer>
+                  <p>
+                    毎週土日祝　10:00～16:00(最終受付)<br>
+                    <i class="fa-solid fa-circle-chevron-right"></i>詳しくはこちら
+                  </p>
+                </footer>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="card">
+              <img src="img/craft.jpg" alt="クラフト工房">
+            </div>
+            <div class="description">
+              <div class="container">
+                <h2>クラフト工房</h2>
+                <footer>
+                  <p>
+                    毎週土日祝　10:00～16:00(最終受付)<br>
+                    <i class="fa-solid fa-circle-chevron-right"></i>詳しくはこちら
+                  </p>
+                </footer>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <div class="card">
+              <img src="img/photoframe.jpg" alt="ガラスモザイク体験">
+            </div>
+            <div class="description">
+              <div class="container">
+                <h2>ステンドグラス＆ガラスモザイク体験</h2>
+                <footer>
+                  <p>
+                    5/7、8、14、15、21、22　 10:00～16:00(最終受付)<br>
+                    <i class="fa-solid fa-circle-chevron-right"></i>詳しくはこちら
+                  </p>
+                </footer>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div class="button">
+        <button id="prev-2" class="hidden"><i class="fa-solid fa-circle-chevron-left"></i></button>
+        <button id="next-2"><i class="fa-solid fa-circle-chevron-right"></i></button>
+      </div>
+      <p class="mt-5 more"><a href=""><i class="fa-solid fa-angles-right"></i>イベントをもっと見る</a></p>
+    </div>
+  </section>
+  
+  <footer class="mt-5">
+    <div class="container">
+      <div class="sns">
+        <a href=""><i class="fa-brands fa-facebook-square"></i></i></a>
+        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+        <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+      </div>
+      <div class="company mt-5">
+        <div class="address">
+          <p>&copy; Snow Park</p>
+          <p>〒XXX - XXXX 東京都XX区XXXX</p>
+          <p>TEL : XXX-XXX-XXXX</p>
+        </div>
+        <div class="links">
+          <p><a href="">会社概要</a></p>
+          <p><a href="">プライバシーポリシー</a></p>
+          <p><a href="">採用情報</a></p>
+          <p><a href="">マスコミ（取材・撮影等）関係者又は、園内で撮影をご検討のみなさまへ</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a href="#" id="to_top"><i class="fa-solid fa-circle-chevron-up"></i></a>
+  <script src="main.js"></script>
+</body>
+</html>
